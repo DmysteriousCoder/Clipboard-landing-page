@@ -87,3 +87,14 @@ button.second {
     border-radius: 25px;
     font-weight: 500;
 }
+
+.hero {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 3em;
+}
+
+.hero .head {
+    display: flex;
+}
