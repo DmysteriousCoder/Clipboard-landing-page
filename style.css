@@ -92,9 +92,59 @@ button.second {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    gap: 3em;
+    gap: 5em;
 }
 
 .hero .head {
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+}
+
+.hero .head h2 {
+    font-size: 40px;
+}
+
+.hero .head p {
+    width: 750px;
+    text-align: center;
+    color: hsl(201, 11%, 66%);
+    line-height: 25px;
+    font-size: 20px;
+}
+
+.hero .body {
+    display: flex;
+    align-items: center;
+    gap: 6em;
+}
+
+.hero .body p {
+    width: 500px;
+}
+
+.hero .body .texts {
+    display: flex;
+    flex-direction: column;
+    gap: 3em;
+}
+
+.hero .body .text {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+}
+
+.hero .body .text h5 {
+    font-size: 30px;
+    font-weight: 600;
+    color: hsl(210, 10%, 33%);
+}
+
+.hero .body .text p {
+    font-size: 20px;
+    font-weight: 600;
+    color: hsl(201, 11%, 66%);
 }
