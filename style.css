@@ -14,18 +14,21 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url("./images/bg-header-desktop.png");
-    background-repeat: no-repeat;
     height: 100vh;
 }
 
 .header {
     width: 100%;
+    background-image: url("./images/bg-header-desktop.png");
+    background-color: white;
+    background-repeat: no-repeat;
+    background-position: top;
+    object-fit: cover;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 2em;
+    gap: 3em;
     height: 100%;
 }
 
@@ -43,6 +46,19 @@ header {
     gap: 1em;
 }
 
+.header .txt h1 {
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.header .txt p {
+    width: 700px;
+    text-align: center;
+    font-weight: 400;
+    font-size: 20px;
+    color: hsl(201, 11%, 66%);
+}
+
 .header .btn {
     display: flex;
     justify-content: center;
@@ -50,8 +66,24 @@ header {
     gap: 2em;
 }
 
-button {
+button.first {
     outline: none;
-    color: inherit;
-    padding: 10px;
+    color: white;
+    padding: 15px 30px;
+    font-size: 20px;
+    background-color: hsl(171, 66%, 44%);
+    border: 2px solid hsl(171, 66%, 44%);
+    border-radius: 25px;
+    font-weight: 500;
+}
+
+button.second {
+    outline: none;
+    color: white;
+    padding: 15px 30px;
+    font-size: 20px;
+    background-color: hsl(233, 100%, 69%);
+    border: 2px solid hsl(233, 100%, 69%);
+    border-radius: 25px;
+    font-weight: 500;
 }
