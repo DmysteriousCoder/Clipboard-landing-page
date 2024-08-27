@@ -322,3 +322,46 @@ button.second {
     align-items: center;
     gap: 3em;
 }
+
+.footer-cont {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(201, 11%, 66%);
+    margin-top: 150px;
+}
+
+footer {
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+footer .left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 7em;
+}
+
+.col {
+    display: flex;
+    flex-direction: column;
+}
+
+ul li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.footer-cont footer .social {
+    display: flex;
+    gap: 1em;
+}
