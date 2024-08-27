@@ -243,7 +243,7 @@ button.second {
 .supercharge .bottom .feat h2 {
     font-weight: 400;
     font-size: 40px;
-    font-weight: 500;
+    font-weight: 600;
     color: hsl(210, 10%, 33%);
 }
 
@@ -328,7 +328,7 @@ button.second {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: hsl(201, 11%, 66%);
+    background-color: rgb(226, 226, 226);
     margin-top: 150px;
 }
 
@@ -340,16 +340,24 @@ footer {
     padding: 20px;
 }
 
+footer .logo img {
+    height: 80px;
+}
+
 footer .left {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     gap: 7em;
+    margin-top: 80px;
 }
 
 .col {
     display: flex;
     flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 1em;
 }
 
 ul li {
@@ -359,9 +367,169 @@ ul li {
 a {
     text-decoration: none;
     color: inherit;
+    color: hsl(210, 10%, 33%);
+    font-size: 20px;
 }
 
 .footer-cont footer .social {
     display: flex;
     gap: 1em;
+}
+
+
+@media screen and (max-width: 420px) {
+    .header {
+        background-image: url("./images/bg-header-mobile.png");
+        background-color: white;
+        background-repeat: no-repeat;
+        background-position: top;
+        object-fit: cover;
+        width: 100%;
+    }
+
+    .header .txt h1 {
+        font-size: 30px;
+        width: 300px;
+        text-align: center;
+    }
+
+    .header .txt p {
+        font-size: 18px;
+        width: 300px;
+        text-align: center;
+    }
+
+    .btn {
+        flex-direction: column;
+    }
+
+    .hero .head h2 {
+        text-align: center;
+        font-size: 30px;
+    }
+
+    .hero .head p {
+        text-align: center;
+        font-size: 18px;
+        width: 300px;
+    }
+
+    .hero .body  {
+        flex-direction: column;
+        gap: 3em;
+    }
+
+    .hero .body .texts {
+        justify-content: center;
+        align-items: center;
+        padding-right: 10px;
+    }
+
+    .hero .body .text {
+        width: 300px;
+    }
+
+    .hero .body .text h5 {
+        text-align: center;
+    }
+
+    .hero .body .text p {
+        width: 300px;
+        text-align: center;
+    }
+
+    .hero .image img {
+        height: 200px;
+    }
+
+    .access .top h2 {
+        text-align: center;
+        font-size: 30px;
+    }
+
+    .access .top p {
+        text-align: center;
+        font-size: 18px;
+        width: 300px;
+    }
+
+    .access img {
+        height: 200px;
+    }
+
+    .supercharge {
+        width: 90%;
+    }
+
+    .supercharge .top h2 {
+        text-align: center;
+        font-size: 30px;
+        width: 300px;
+    }
+
+    .supercharge .top p {
+        text-align: center;
+        font-size: 18px;
+        width: 300px;
+    }
+
+    .supercharge .bottom {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        gap: 3em;
+    }
+
+    .supercharge .bottom .feat {
+        width: 90%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .supercharge .bottom .feat h2 {
+        font-size: 35px;
+        font-weight: 600;
+    }
+
+    .sponsor {
+        width: 90%;
+        flex-direction: column;
+    }
+
+    .cta {
+        width: 90%;
+    }
+
+    .cta .text {
+        gap: 3em;
+    }
+
+    .cta .text h1 {
+        font-size: 35px;
+        text-align: center;
+    }
+
+    .cta .text p {
+        width: 300px;
+    }
+
+    footer {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 3em;
+    }
+
+    footer .left {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 2em;
+    }
+
+    .col {
+        justify-content: center;
+        align-items: center;
+    }
 }
