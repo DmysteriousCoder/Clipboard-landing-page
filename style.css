@@ -228,21 +228,23 @@ button.second {
 
 .supercharge .bottom {
     display: flex;
-    gap: 2em;
+    width: 100%;
 }
 
 .supercharge .bottom .feat {
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
-    gap: 2em;
+    width: 100%;
+    gap: 3em;
 }
 
 .supercharge .bottom .feat h2 {
     font-weight: 400;
     font-size: 40px;
     font-weight: 500;
+    color: hsl(210, 10%, 33%);
 }
 
 .supercharge .bottom .feat p {
@@ -252,4 +254,71 @@ button.second {
     color: hsl(201, 11%, 66%);
     font-weight: 400;
     font-size: 18px;
+}
+
+.sponsor-cont {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 150px;
+}
+
+.sponsor {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5em;
+}
+
+.sponsor img {
+    height: 55px;
+}
+
+.cta-cont {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 150px;
+}
+
+.cta {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cta .text {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+}
+
+.cta .text h1 {
+    font-weight: 400;
+    font-size: 40px;
+    font-weight: 500;
+    color: hsl(210, 10%, 33%);
+}
+
+.cta .text p {
+    width: 650px;
+    text-align: center;
+    color: hsl(201, 11%, 66%);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+}
+
+.cta .btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3em;
 }
